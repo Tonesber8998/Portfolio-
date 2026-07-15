@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arihant Singh Bhadauria — Software Developer</title>
+<meta name="description" content="Portfolio of Arihant Singh Bhadauria, Computer Science student and full-stack software developer.">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ambient background -->
+<div class="bg">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="grid-overlay"></div>
+</div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header class="nav-wrap" id="navWrap">
+  <nav class="nav container">
+    <a href="#home" class="logo">arihant<span>.dev</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"><span class="nav-num">01</span> About</a></li>
+      <li><a href="#experience"><span class="nav-num">02</span> Experience</a></li>
+      <li><a href="#projects"><span class="nav-num">03</span> Projects</a></li>
+      <li><a href="#skills"><span class="nav-num">04</span> Skills</a></li>
+      <li><a href="#contact" class="btn btn-outline btn-small">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero container">
+    <div class="hero-content">
+      <p class="hero-badge reveal"><span class="pulse-dot"></span> Open to internships &amp; opportunities</p>
+      <h1 class="reveal d1">Arihant Singh<br><span class="gradient-text">Bhadauria</span></h1>
+      <div class="hero-role reveal d2">
+        <span class="mono">&lt;</span><span id="typed"></span><span class="type-caret">|</span><span class="mono">/&gt;</span>
+      </div>
+      <p class="hero-text reveal d3">
+        CS undergrad at <strong>VIT Vellore</strong> building full-stack products, AI-driven
+        automation, and distributed backend systems — from browser-testing agents to
+        banking-portal microservices that hold up under real use.
+      </p>
+      <div class="hero-actions reveal d4">
+        <a href="#projects" class="btn btn-primary">View my work <span class="arrow">→</span></a>
+        <a href="assets/Arihant_Singh_Bhadauria_Resume.pdf" class="btn btn-ghost" download>↓ Resume</a>
+      </div>
+      <div class="hero-socials reveal d5">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="https://leetcode.com/" target="_blank" rel="noopener" aria-label="LeetCode">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M13.48 3.5a1.37 1.37 0 0 1 1 .42l5.6 5.79a1.45 1.45 0 0 1 0 2 1.35 1.35 0 0 1-1.96 0l-5.6-5.8a1.45 1.45 0 0 1 0-2 1.37 1.37 0 0 1 .96-.41zM9.9 5.03a1.37 1.37 0 0 1 .97.42 1.45 1.45 0 0 1 0 2l-3.9 4.03a2.9 2.9 0 0 0 0 4l3.94 4.08a1.45 1.45 0 0 1 0 2 1.35 1.35 0 0 1-1.95 0L5 17.5a5.8 5.8 0 0 1 0-8.04l3.93-4.02a1.37 1.37 0 0 1 .97-.42zm9.94 8.51a1.4 1.4 0 0 1 1.4 1.42 1.4 1.4 0 0 1-1.4 1.41h-8.9a1.4 1.4 0 0 1-1.4-1.41 1.4 1.4 0 0 1 1.4-1.42h8.9z"/></svg>
+        </a>
+        <a href="mailto:arihantsingh050304@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual reveal d3" aria-hidden="true">
+      <div class="code-card">
+        <div class="code-card-bar"><span></span><span></span><span></span><em>arihant.js</em></div>
+        <pre><code><span class="c-kw">const</span> <span class="c-var">arihant</span> = {
+  <span class="c-key">role</span>: <span class="c-str">'Full-Stack Developer'</span>,
+  <span class="c-key">education</span>: <span class="c-str">'B.Tech CSE @ VIT'</span>,
+  <span class="c-key">cgpa</span>: <span class="c-num">8.55</span>,
+  <span class="c-key">stack</span>: [<span class="c-str">'React'</span>, <span class="c-str">'Spring Boot'</span>,
+          <span class="c-str">'Node.js'</span>, <span class="c-str">'FastAPI'</span>],
+  <span class="c-key">currentFocus</span>: <span class="c-str">'AI agents + fintech'</span>,
+  <span class="c-key">hireable</span>: <span class="c-kw">true</span>
+};</code></pre>
+      </div>
+      <div class="stat-chips">
+        <div class="chip"><strong>8.55</strong>CGPA</div>
+        <div class="chip"><strong>10+</strong>journeys validated</div>
+        <div class="chip"><strong>2</strong>internships</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <h3 class="section-title reveal"><span class="num">01</span>About Me<span class="line"></span></h3>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a Computer Science Engineering student at <strong>Vellore Institute of Technology</strong>
+          (2023–2027). My work spans full-stack web development, backend microservices, and applying
+          AI/LLM tooling to real engineering problems — from automated browser-testing agents to
+          NLP-driven document pipelines.
+        </p>
+        <p>
+          At <strong>ScoreMe Solutions</strong>, I built an AI-powered end-to-end testing agent
+          automating MSME loan origination workflows, and shipped enterprise features for the
+          <strong>Union Bank of India Assisted Portal</strong> on a React + Spring Boot + Cassandra +
+          Kafka + Redis stack. Earlier at <strong>NIIT NLSL</strong>, I engineered a secure
+          authentication platform supporting 100+ concurrent users.
+        </p>
+        <ul class="about-tech-list">
+          <li>JavaScript / TypeScript</li>
+          <li>React.js &amp; Node.js</li>
+          <li>Java &amp; Spring Boot</li>
+          <li>Python (FastAPI / Flask)</li>
+          <li>PostgreSQL · Cassandra · Redis</li>
+          <li>Docker · Kafka · Git</li>
+        </ul>
+      </div>
+      <div class="about-card reveal">
+        <div class="edu-card glass">
+          <span class="edu-icon">🎓</span>
+          <h4>VIT, Vellore</h4>
+          <p class="edu-sub">B.Tech Computer Science Engineering</p>
+          <p class="edu-meta">2023 – 2027 · <span class="highlight">CGPA 8.55/10</span></p>
+        </div>
+        <div class="edu-card glass">
+          <span class="edu-icon">🏫</span>
+          <h4>St. Peter's College, Agra</h4>
+          <p class="edu-sub">ISC XII: 92.5% · ICSE X: 88.6%</p>
+          <p class="edu-meta">2011 – 2023</p>
+        </div>
+        <div class="edu-card glass">
+          <span class="edu-icon">🏆</span>
+          <h4>Achievement</h4>
+          <p class="edu-sub">93% in Class XII — top 7% rank</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section container">
+    <h3 class="section-title reveal"><span class="num">02</span>Experience<span class="line"></span></h3>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass">
+          <div class="timeline-head">
+            <div>
+              <h4>Software Developer Intern</h4>
+              <p class="timeline-company">ScoreMe Solutions</p>
+            </div>
+            <span class="timeline-date">May 2026 – Jul 2026</span>
+          </div>
+          <ul>
+            <li>Engineered an AI-powered end-to-end testing agent using kane-cli that automated MSME loan origination workflows through real browser execution and generated CI-ready reports.</li>
+            <li>Developed enterprise features for the Union Bank of India Assisted Portal using React, Spring Boot microservices, Cassandra, Kafka, and Redis.</li>
+            <li>Validated 10+ onboarding and verification journeys by debugging full-stack workflows and documenting API integrations and business rule validations.</li>
+          </ul>
+          <ul class="tag-list">
+            <li>React</li><li>Spring Boot</li><li>Cassandra</li><li>Kafka</li><li>Redis</li><li>AI Agents</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass">
+          <div class="timeline-head">
+            <div>
+              <h4>Full Stack Intern</h4>
+              <p class="timeline-company">NIIT NLSL</p>
+            </div>
+            <span class="timeline-date">May 2025 – Jun 2025</span>
+          </div>
+          <ul>
+            <li>Engineered a secure authentication platform using JWT, RBAC, bcrypt, and PostgreSQL supporting 100+ concurrent users.</li>
+            <li>Integrated React.js and Node.js authentication workflows while optimizing PostgreSQL queries.</li>
+          </ul>
+          <ul class="tag-list">
+            <li>React.js</li><li>Node.js</li><li>JWT</li><li>PostgreSQL</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <h3 class="section-title reveal"><span class="num">03</span>Projects<span class="line"></span></h3>
+    <div class="project-grid">
+
+      <article class="project-card glass reveal">
+        <div class="project-glow"></div>
+        <div class="project-card-top">
+          <span class="project-icon">🔐</span>
+          <a href="#" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repo">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          </a>
+        </div>
+        <h4>User Management Authentication System (UMAS)</h4>
+        <p>Secure full-stack authentication platform with JWT, RBAC, and PostgreSQL featuring REST APIs, role-based access control, and an admin dashboard.</p>
+        <ul class="tag-list">
+          <li>React.js</li><li>Node.js</li><li>Express.js</li><li>PostgreSQL</li><li>JWT</li><li>Docker</li>
+        </ul>
+      </article>
+
+      <article class="project-card glass reveal">
+        <div class="project-glow"></div>
+        <div class="project-card-top">
+          <span class="project-icon">🏦</span>
+          <a href="#" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repo">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          </a>
+        </div>
+        <h4>Union Bank of India MSME Lending Assisted Portal</h4>
+        <p>Contributed to a real-time MSME digital lending platform — implementing and validating end-to-end onboarding workflows, API integrations, and business-rule orchestration.</p>
+        <ul class="tag-list">
+          <li>React.js</li><li>Spring Boot</li><li>Cassandra</li><li>Kafka</li><li>Redis</li><li>Java</li><li>Python</li>
+        </ul>
+      </article>
+
+      <article class="project-card glass reveal">
+        <div class="project-glow"></div>
+        <div class="project-card-top">
+          <span class="project-icon">🤖</span>
+          <a href="#" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repo">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          </a>
+        </div>
+        <h4>AI-Driven End-to-End Testing Agent</h4>
+        <p>AI-powered testing agent using kane-cli that automates loan origination workflows through browser automation — validating multiple customer journeys and generating CI-ready test reports.</p>
+        <ul class="tag-list">
+          <li>Python</li><li>kane-cli</li><li>Browser Automation</li><li>React.js</li><li>Spring Boot</li>
+        </ul>
+      </article>
+
+      <article class="project-card glass reveal">
+        <div class="project-glow"></div>
+        <div class="project-card-top">
+          <span class="project-icon">🔊</span>
+          <a href="#" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repo">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          </a>
+        </div>
+        <h4>SmoothFlow — Selective Text-to-Speech System</h4>
+        <p>NLP pipeline that converts academic PDFs into structured speech while reducing LLM usage by nearly 60% through selective text processing.</p>
+        <ul class="tag-list">
+          <li>Python</li><li>NLP</li><li>LLMs</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container">
+    <h3 class="section-title reveal"><span class="num">04</span>Skills<span class="line"></span></h3>
+    <div class="skills-grid">
+      <div class="skill-card glass reveal">
+        <h4><span>{ }</span> Languages</h4>
+        <ul class="tag-list">
+          <li>C++</li><li>Java</li><li>Python</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SQL</li>
+        </ul>
+      </div>
+      <div class="skill-card glass reveal">
+        <h4><span>⚛</span> Frameworks</h4>
+        <ul class="tag-list">
+          <li>React.js</li><li>Node.js</li><li>Express.js</li><li>FastAPI</li><li>Flask</li><li>Spring Boot</li>
+        </ul>
+      </div>
+      <div class="skill-card glass reveal">
+        <h4><span>🗄</span> Databases</h4>
+        <ul class="tag-list">
+          <li>PostgreSQL</li><li>MySQL</li><li>Cassandra</li><li>Redis</li>
+        </ul>
+      </div>
+      <div class="skill-card glass reveal">
+        <h4><span>🛠</span> Tools</h4>
+        <ul class="tag-list">
+          <li>Git</li><li>Docker</li><li>Kafka</li><li>Linux</li><li>OpenAI API</li><li>Vapi</li>
+        </ul>
+      </div>
+      <div class="skill-card glass reveal wide">
+        <h4><span>🧠</span> Concepts</h4>
+        <ul class="tag-list">
+          <li>Data Structures &amp; Algorithms</li><li>OOP</li><li>DBMS</li><li>Operating Systems</li><li>Computer Networks</li><li>REST APIs</li><li>Microservices</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container contact-section">
+    <div class="contact-card glass reveal">
+      <p class="contact-eyebrow mono">05 · what's next?</p>
+      <h3 class="contact-title">Let's build something <span class="gradient-text">together</span></h3>
+      <p class="contact-lead">
+        I'm currently open to internships and full-stack engineering opportunities.
+        Whether you have a role, a project, or just want to say hi — my inbox is open.
+      </p>
+      <a href="mailto:arihantsingh050304@gmail.com" class="btn btn-primary btn-large">Say Hello <span class="arrow">→</span></a>
+      <div class="contact-details">
+        <a href="tel:+919760028811">+91 97600 28811</a>
+        <span>·</span>
+        <a href="mailto:arihantsingh050304@gmail.com">arihantsingh050304@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="mono">designed &amp; built by <span class="highlight">Arihant Singh Bhadauria</span> © 2026</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
